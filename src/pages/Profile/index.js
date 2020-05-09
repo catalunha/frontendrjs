@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { FiPower } from 'react-icons/fi'
+import { FiPower,FiTrash2 } from 'react-icons/fi'
 import logoImg from '../../assets/logo.svg'
 import './styles.css'
 export default function Profile() {
@@ -9,14 +9,60 @@ export default function Profile() {
       <header>
         <img src={logoImg} alt="Be The Hero" />
         <span>Bem vinda, ~APAD~</span>
-        <Link to='/incidents/nem' className='button'>
+        <Link to='/incident/new' className='button'>
           Cadastrar novo caso
         </Link>
         <button type='button'>
-        <FiPower size={18} color="#e02041" />
+          <FiPower size={18} color="#e02041" />
         </button>
       </header>
-
+      <h1>Casos Cadastrados</h1>
+      <ul>
+      <li>
+        <strong>CASO:</strong>
+          <p>~Caso...Caso...Caso~</p>
+          <strong>DESCRIÇÃO:</strong>
+          <p>~descricao...descricao...descricao...descricao...descricao...descricao...descricao...descricao...~</p>
+          <strong>VALOR:</strong>
+          <p>~R$ 999,00~</p>
+          <button type='button'>
+          <FiTrash2 size={20} color="#a8a8b3" />
+        </button>
+        </li>
+        <li>
+        <strong>CASO:</strong>
+          <p>~Caso...Caso...Caso~</p>
+          <strong>DESCRIÇÃO:</strong>
+          <p>~descricao...descricao...descricao...descricao...descricao...descricao...descricao...descricao...~</p>
+          <strong>VALOR:</strong>
+          <p>~R$ 999,00~</p>
+          <button type='button'>
+          <FiTrash2 size={20} color="#a8a8b3" />
+        </button>
+        </li>
+        <li>
+        <strong>CASO:</strong>
+          <p>~Caso...Caso...Caso~</p>
+          <strong>DESCRIÇÃO:</strong>
+          <p>~descricao...descricao...descricao...descricao...descricao...descricao...descricao...descricao...~</p>
+          <strong>VALOR:</strong>
+          <p>~R$ 999,00~</p>
+          <button type='button'>
+          <FiTrash2 size={20} color="#a8a8b3" />
+        </button>
+        </li>
+        <li>
+        <strong>CASO:</strong>
+          <p>~Caso...Caso...Caso~</p>
+          <strong>DESCRIÇÃO:</strong>
+          <p>~descricao...descricao...descricao...descricao...descricao...descricao...descricao...descricao...~</p>
+          <strong>VALOR:</strong>
+          <p>~R$ 999,00~</p>
+          <button type='button'>
+          <FiTrash2 size={20} color="#a8a8b3" />
+        </button>
+        </li>
+      </ul>
     </div>
   )
 }
